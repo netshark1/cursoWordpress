@@ -1,0 +1,46 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top {
+        margin: auto;
+        background-color: #ec9b21;
+        height: 200px;
+        line-height: 150px;
+        color: aliceblue;
+        text-align: center;
+    }
+    
+    .corpo {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .cidade {
+        width: 25%;
+        float: left;
+    }
+    
+    .cidade p {
+        padding: 10px;
+    }
+    
+    .cidade span {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    @media only screen and (min-width:500px) and (max-width:800px) {
+        .cidade {
+            width: 50%;
+        }
+    }
+    
+    @media only screen and (max-width:500px) {
+        .cidade {
+            width: 100%;
+        }
+    }

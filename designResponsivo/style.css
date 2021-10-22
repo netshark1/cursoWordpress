@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+.topo {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #eee;
+}
+
+.menu {
+    width: 50%;
+    height: 100px;
+    float: right;
+    background-color: #ddd;
+}
+
+.corpo {
+    width: 100%;
+    max-width: 800px;
+    height: 1000px;
+    background-color: #b4acac;
+    margin: auto;
+}
+
+.rodape {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    background-color: #e0e0e0;
+    margin: auto;
+}
+
+@media only screen and (max-width:400px) {
+    .topo {
+        width: 200px;
+    }
+    .logo {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .corpo {
+        width: 200px;
+    }
+    .rodape {
+        width: 200px;
+    }
+}
