@@ -1,0 +1,115 @@
+    @keyframes exemplo {
+        0% {
+            background-color: red;
+        }
+        10% {
+            background-color: pink;
+            margin-left: 20px;
+        }
+        50% {
+            background-color: brown;
+            margin-left: 40px;
+            margin-top: 200px;
+        }
+        70% {
+            background-color: blue;
+        }
+        100% {
+            background-color: green;
+            margin-top: 200px;
+        }
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Helvetica, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: medium;
+    }
+    
+    .main {
+        background-color: #fcfcfc;
+        max-width: 800px;
+        margin: auto;
+    }
+    
+    .top {
+        width: 100%;
+        height: 150px;
+        background-color: #DC143C;
+        background: linear-gradient(5deg, #DC143C, #fff);
+        color: #f0f0f0;
+        margin: auto;
+        width: 100%;
+        max-width: 800px;
+        line-height: 150px;
+        text-align: center;
+    }
+    
+    .menu ul {
+        background-color: #8B0000;
+        min-height: 50px;
+    }
+    
+    .menumobile {
+        display: none;
+    }
+    
+    .menu ul li {
+        padding-left: 5px;
+        padding-right: 5px;
+        cursor: pointer;
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        line-height: 50px;
+        float: left;
+    }
+    
+    .menu ul li:hover {
+        background-color: #DC143C;
+    }
+    
+    .texto {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        padding: 10px;
+        float: left;
+    }
+    
+    .imagem img {
+        float: inline-end;
+        width: 50%;
+    }
+    
+    @media only screen and (max-width:500px) {
+        .main {
+            width: 75%;
+        }
+        .menu {
+            display: none;
+        }
+        .menumobile img {
+            width: 15%;
+        }
+        .menumobile {
+            display: block;
+            height: 30px;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+    
+    .exemplo {
+        width: 120px;
+        background-color: yellow;
+        height: 50px;
+        animation-name: exemplo;
+        animation-duration: 20s;
+        position: absolute;
+        z-index: 99;
+    }
